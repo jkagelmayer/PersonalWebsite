@@ -158,7 +158,7 @@ p {
   text-shadow: black 0px 0px 5px;
 }
 
-#education-grid, #industry-grid {
+#education-grid, #industry-grid, #leadership-grid, #projects-grid {
   grid-template-columns: 1fr 2fr 3fr;
   grid-auto-rows: 1fr;
   grid-column-gap: 10px;
