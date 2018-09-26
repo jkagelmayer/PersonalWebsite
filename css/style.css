@@ -80,8 +80,17 @@ h3 {
   margin-bottom: 10px;
 }
 
+p {
+  font-size: calc(12px + 0.25vw);
+}
+
 .wrapper {
   width: 70%;
+  margin: 100px auto;
+}
+
+.sub-wrapper {
+  width: 100%;
   margin: 100px auto;
 }
 
@@ -90,16 +99,28 @@ h3 {
 }
 
 .red-filler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgb(255,100,100);
   height: 160px;
-  background-color: red;
 }
 
 .green-filler {
-  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgb(100,255,100);
 }
 
 .yellow-filler {
-  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgb(100,100,255);
 }
 
 .lalign {
@@ -137,7 +158,7 @@ h3 {
   text-shadow: black 0px 0px 5px;
 }
 
-#education {
+#education-grid, #industry-grid {
   grid-template-columns: 1fr 2fr 3fr;
   grid-auto-rows: 1fr;
   grid-column-gap: 10px;
