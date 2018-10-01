@@ -77,11 +77,26 @@ h2 {
 
 h3 {
   font-size: calc(12px + 0.5vw);
-  margin-bottom: 10px;
 }
 
 p {
   font-size: calc(12px + 0.25vw);
+}
+
+.cover-photo {
+  position: absolute;
+  width: 100%;
+  height: 56.25vw;
+  opacity: 0.85;
+  filter: alpha(opacity = 85);  /* for elderly browsers */
+}
+
+.cover-text {
+  position: relative;
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  height: 56.25vw;
 }
 
 .wrapper {
@@ -101,7 +116,8 @@ p {
 .red-filler {
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-content: : center;
+  text-align: center;
   font-weight: bold;
   background-color: rgb(255,100,100);
   height: 160px;
@@ -110,17 +126,28 @@ p {
 .green-filler {
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-content: : center;
+  text-align: center;
   font-weight: bold;
   background-color: rgb(100,255,100);
+}
+
+.blue-filler {
+  display: grid;
+  align-items: center;
+  justify-content: : center;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(100,100,255);
 }
 
 .yellow-filler {
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  text-align: center;
   font-weight: bold;
-  background-color: rgb(100,100,255);
+  background-color: rgb(255, 255, 100);
 }
 
 .lalign {
@@ -175,23 +202,7 @@ p {
   grid-column-end: 5;
 }
 
-#cover-photo {
-  position: absolute;
-  width: 100%;
-  height: 56.25vw;
-  opacity: 0.85;
-  filter: alpha(opacity = 85);  /* for elderly browsers */
-}
-
-#cover {
-  position: relative;
-  display: table;
-  width: 80%;
-  margin: 0 auto;
-  height: 56.25vw;
-}
-
-#cover h1 {
+.cover-text h1 {
   color: #EEE;
   background-color: transparent;
   text-shadow: black 0px 0px 5px;
@@ -210,9 +221,6 @@ p {
   grid-row-gap: 2vw;
 }
 
-#skills-grid div {
-}
-
 #skills-grid h3 {
   margin: 0;
 }
@@ -227,4 +235,121 @@ p {
 
 #proficient {
   grid-column: 8 / 10;
+}
+
+#writing-grid {
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+#writing-grid .green-filler {
+  height: 2vw;
+}
+
+#writing-fiction-header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#writing-fiction {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#writing-opinions-header {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+#writing-opinions {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#address-grid {
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+#address-grid .green-filler {
+  height: 2vw;
+}
+
+#permanent-address-header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#permanent-address {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#current-address-header {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+#current-address {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#contact-grid {
+  grid-template-columns: repeat(20, 50px);
+  grid-template-rows: 2fr 1fr;
+}
+
+#icon-phone, #icon-email, #icon-linkedin, #icon-github, #icon-twitter {
+  height: 100px;
+  font-size: 12px;
+  grid-row: 1 / 2;
+}
+
+#contact-phone, #contact-email, #contact-linkedin, #contact-github, #contact-twitter {
+  height: 50px;
+  grid-row: 2 / 3;
+  background-color: transparent;
+}
+
+#icon-phone {
+  grid-column: 2 / 4;
+}
+
+#contact-phone {
+  grid-column: 1 / 5;
+}
+
+#icon-email {
+  grid-column: 6 / 8;
+}
+
+#contact-email {
+  grid-column: 5 / 9;
+}
+
+#icon-linkedin {
+  grid-column: 10 / 12;
+}
+
+#contact-linkedin {
+  grid-column: 9 / 13;
+}
+
+#icon-github {
+  grid-column: 14 / 16;
+}
+
+#contact-github {
+  grid-column: 13 / 17;
+}
+
+#icon-twitter {
+  grid-column: 18 / 20;
+}
+
+#contact-twitter {
+  grid-column: 17 / 21;
 }
