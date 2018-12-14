@@ -79,7 +79,11 @@ h3 {
   font-size: calc(12px + 0.5vw);
 }
 
-p {
+h4 {
+	font-size: calc(12px + 0.25w);
+}
+
+p, ul {
   font-size: calc(12px + 0.25vw);
 }
 
@@ -100,7 +104,7 @@ p {
 }
 
 .wrapper {
-  width: 70%;
+  width: 80%;
   margin: 100px auto;
 }
 
@@ -113,41 +117,60 @@ p {
   display: grid;
 }
 
-.red-filler {
-  display: grid;
-  align-items: center;
-  justify-content: : center;
-  text-align: center;
-  font-weight: bold;
-  background-color: rgb(255,100,100);
-  height: 160px;
+.icon {
+	align-self: center;
+	justify-self: center;
+	width: 50%;
+	padding: 25%;
 }
 
-.green-filler {
-  display: grid;
-  align-items: center;
-  justify-content: : center;
-  text-align: center;
-  font-weight: bold;
-  background-color: rgb(100,255,100);
+.info, .details {
+	align-self: left;
+	padding: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	font-size: calc(12px + 0.25vw);
 }
 
-.blue-filler {
-  display: grid;
-  align-items: center;
-  justify-content: : center;
-  text-align: center;
-  font-weight: bold;
-  background-color: rgb(100,100,255);
+.icon, .info, .details {
+	box-shadow: 0px 2px 5px #999;
+	border: 1px solid #999;
 }
 
-.yellow-filler {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  background-color: rgb(255, 255, 100);
+.info p {
+	font-weight: bold;
+}
+
+.details p {
+	text-decoration: underline;
+}
+
+a, .hiddenlist {
+	color: #A85751;
+	transition: opacity 0.33s;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover, .hiddenlist:hover {
+	opacity: 0.5;
+}
+
+.hidden {
+	display: none;
+}
+
+ul {
+	margin-left: 15px;
+}
+
+ul li {
+	margin-top: 15px;
+}
+
+li ul {
+	margin-left: 30px;
+	list-style: initial;
 }
 
 .lalign {
@@ -209,9 +232,11 @@ p {
 }
 
 #education-grid, #industry-grid, #leadership-grid, #projects-grid {
-  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-columns: 1fr 2fr 2fr;
   grid-auto-rows: 1fr;
-  grid-gap: 10px;
+  grid-column-gap: 1vw;
+	grid-row-gap: 2vw;
+	margin-top: 20px;
 }
 
 #skills-grid {
@@ -298,18 +323,17 @@ p {
 }
 
 #contact-grid {
-  grid-template-columns: repeat(20, 50px);
+  grid-template-columns: repeat(20, 4vw);
   grid-template-rows: 2fr 1fr;
 }
 
 #icon-phone, #icon-email, #icon-linkedin, #icon-github, #icon-twitter {
-  height: 100px;
   font-size: 12px;
   grid-row: 1 / 2;
 }
 
 #contact-phone, #contact-email, #contact-linkedin, #contact-github, #contact-twitter {
-  height: 50px;
+	line-height: 30px;
   grid-row: 2 / 3;
   background-color: transparent;
 }
