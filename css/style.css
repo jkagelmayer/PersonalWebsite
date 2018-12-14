@@ -67,7 +67,7 @@ body {
 h1 {
   font-size: calc(12px + 4vw);
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -105,44 +105,71 @@ p, ul {
 
 .wrapper {
   width: 80%;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
-.sub-wrapper {
+.wrapper .wrapper {
   width: 100%;
-  margin: 100px auto;
+  margin: 50px auto;
+	overflow: hidden;
 }
 
-.grid-container {
-  display: grid;
+.wrapper .wrapper .wrapper {
+	margin: 10px auto;
+}
+
+.box-wrapper {
+	margin: 10px auto;
+	border: 1px solid #999;
+	box-shadow: 0px 2px 5px #999;
+}
+
+.box-wrapper > div {
+	width: 95%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.box-header {
+	border-bottom: 1px solid #555;
+	margin-bottom: 10px;
 }
 
 .icon {
-	align-self: center;
-	justify-self: center;
-	width: 50%;
-	padding: 25%;
+	width: 10%;
+	padding: 2.5%;
+	float: left;
 }
 
-.info, .details {
-	align-self: left;
-	padding: 10px;
-	width: calc(100% - 20px);
-	height: calc(100% - 20px);
-	font-size: calc(12px + 0.25vw);
-}
-
-.icon, .info, .details {
-	box-shadow: 0px 2px 5px #999;
-	border: 1px solid #999;
+.info {
+	width: 80%;
+	padding: 2.5%;
+	float: left;
 }
 
 .info p {
 	font-weight: bold;
 }
 
+.info li {
+	margin-top: 10px;
+}
+
 .details p {
 	text-decoration: underline;
+}
+
+ul {
+	margin-left: 15px;
+}
+
+ul li {
+	margin-top: 15px;
+}
+
+li ul {
+	margin-left: 30px;
+	list-style: initial;
 }
 
 a, .hiddenlist {
@@ -160,19 +187,6 @@ a:hover, .hiddenlist:hover {
 	display: none;
 }
 
-ul {
-	margin-left: 15px;
-}
-
-ul li {
-	margin-top: 15px;
-}
-
-li ul {
-	margin-left: 30px;
-	list-style: initial;
-}
-
 .lalign {
   float: left;
 }
@@ -188,14 +202,11 @@ li ul {
 
 .skill-level {
   font-weight: bold;
-  display: grid;
   align-items: center;
   justify-items: center;
 }
 
 .skill-name {
-  grid-column: 1 / 3;
-  display: grid;
   align-items: end;
   justify-items: end;
   margin-right: 1vw;
@@ -205,7 +216,6 @@ li ul {
   background-color: rgb(100,100,255);
   border: 2px solid #EEE;
   border-left: 2px solid black;
-  grid-column-start: 3;
   transition: opacity 0.33s;
 }
 
@@ -214,15 +224,12 @@ li ul {
 }
 
 .skill-bar-proficient {
-  grid-column-end: 9;
 }
 
 .skill-bar-experienced {
-  grid-column-end: 7;
 }
 
 .skill-bar-familiar{
-  grid-column-end: 5;
 }
 
 .cover-text h1 {
@@ -231,149 +238,11 @@ li ul {
   text-shadow: black 0px 0px 5px;
 }
 
-#education-grid, #industry-grid, #leadership-grid, #projects-grid {
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-auto-rows: 1fr;
-  grid-column-gap: 1vw;
-	grid-row-gap: 2vw;
-	margin-top: 20px;
-}
-
-#skills-grid {
-  grid-template-columns: repeat(9, 1fr);
-  grid-auto-rows: 1fr;
-  grid-column-gap: 0;
-  grid-row-gap: 2vw;
-}
-
-#skills-grid h3 {
-  margin: 0;
-}
-
-#familiar {
-  grid-column: 4 / 6;
-}
-
-#experienced {
-  grid-column: 6 / 8;
-}
-
-#proficient {
-  grid-column: 8 / 10;
-}
-
-#writing-grid {
-  grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 1fr 3fr;
-  grid-gap: 10px;
-}
-
-#writing-grid .green-filler {
-  height: 2vw;
-}
-
-#writing-fiction-header {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-#writing-fiction {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-#writing-opinions-header {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-
-#writing-opinions {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-
-#address-grid {
-  grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 1fr 3fr;
-  grid-gap: 10px;
-}
-
-#address-grid .green-filler {
-  height: 2vw;
-}
-
-#permanent-address-header {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-#permanent-address {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-#current-address-header {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-
-#current-address {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-
-#contact-grid {
-  grid-template-columns: repeat(20, 4vw);
-  grid-template-rows: 2fr 1fr;
-}
-
 #icon-phone, #icon-email, #icon-linkedin, #icon-github, #icon-twitter {
   font-size: 12px;
-  grid-row: 1 / 2;
 }
 
 #contact-phone, #contact-email, #contact-linkedin, #contact-github, #contact-twitter {
 	line-height: 30px;
-  grid-row: 2 / 3;
   background-color: transparent;
-}
-
-#icon-phone {
-  grid-column: 2 / 4;
-}
-
-#contact-phone {
-  grid-column: 1 / 5;
-}
-
-#icon-email {
-  grid-column: 6 / 8;
-}
-
-#contact-email {
-  grid-column: 5 / 9;
-}
-
-#icon-linkedin {
-  grid-column: 10 / 12;
-}
-
-#contact-linkedin {
-  grid-column: 9 / 13;
-}
-
-#icon-github {
-  grid-column: 14 / 16;
-}
-
-#contact-github {
-  grid-column: 13 / 17;
-}
-
-#icon-twitter {
-  grid-column: 18 / 20;
-}
-
-#contact-twitter {
-  grid-column: 17 / 21;
 }
