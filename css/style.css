@@ -62,6 +62,7 @@ body {
   background-color: #EEE;
   color: #333;
   text-align: left;
+  line-height: 1.5;
 }
 
 h1 {
@@ -153,10 +154,6 @@ p, ul {
 	font-weight: bold;
 }
 
-.info li {
-	margin-top: 10px;
-}
-
 .details {
 	margin-top: 2%;
 }
@@ -165,12 +162,20 @@ p, ul {
 	text-decoration: underline;
 }
 
-ul {
-	margin-left: 15px;
+.details li {
+  margin-top: 10px;
 }
 
-ul li {
-	margin-top: 15px;
+#education .details p {
+  margin-left: 15px;
+}
+
+#education .details ul {
+  margin-left: 30px;
+}
+
+ul {
+	margin-left: 15px;
 }
 
 li ul {
