@@ -115,11 +115,15 @@ p, ul {
 	overflow: hidden;
 }
 
+.fade-in {
+  opacity: 0;
+}
+
 .box-wrapper {
   width: 99%;
 	margin: 2% auto 4% auto;
 	border: 1px solid #999;
-	box-shadow: 0px 3px 5px #999;
+  box-shadow: 0px 3px 5px #999;
 }
 
 .box-wrapper > div {
