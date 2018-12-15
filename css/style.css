@@ -141,10 +141,10 @@ p, ul {
 	float: left;
 }
 
-#leadership-si .icon {
+#leadership .icon {
   /* this icon already has some padding */
-  width: 14%;
-  padding: 0.5%;
+  width: 13%;
+  padding: 1%;
 }
 
 .info {
