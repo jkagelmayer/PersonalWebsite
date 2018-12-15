@@ -111,18 +111,15 @@ p, ul {
 
 .wrapper .wrapper {
   width: 100%;
-  margin: 50px auto;
+  margin: 10% auto;
 	overflow: hidden;
 }
 
-.wrapper .wrapper .wrapper {
-	margin: 10px auto;
-}
-
 .box-wrapper {
-	margin: 10px auto;
+  width: 99%;
+	margin: 2% auto 4% auto;
 	border: 1px solid #999;
-	box-shadow: 0px 2px 5px #999;
+	box-shadow: 0px 3px 5px #999;
 }
 
 .box-wrapper > div {
