@@ -9,30 +9,30 @@ $(document).ready(function() {
   var fade_time_fast = 1000;
 
   $(".fade-in").each(function(i) {
-    var this_bottom  = $(this).offset().top + $(this).outerHeight();
+    var this_show  = $(this).offset().top + 0.25 * $(this).outerHeight();
     var window_bottom = $(window).scrollTop() + $(window).height();
     var fade_time = fade_time_fast;
 
-    if ($(this).parents(".cover-text") && $(this).is("h1")) {
+    if ($(this).is("#welcome-text")) {
       fade_time = fade_time_slow;
     }
 
-    if (window_bottom > this_bottom) {
+    if (window_bottom > this_show) {
       $(this).animate({'opacity':'1'}, fade_time);
     }
   });
 
   $(window).scroll(function() {
     $(".fade-in").each(function(i) {
-      var this_bottom = $(this).offset().top + $(this).outerHeight();
+      var this_show  = $(this).offset().top + 0.25 * $(this).outerHeight();
       var window_bottom = $(window).scrollTop() + $(window).height();
       var fade_time = fade_time_fast;
 
-      if ($(this).parents(".cover-text") && $(this).is("h1")) {
+      if ($(this).is("#welcome-text")) {
         fade_time = fade_time_slow;
       }
 
-      if (window_bottom > this_bottom) {
+      if (window_bottom > this_show) {
         $(this).animate({'opacity':'1'}, fade_time);
       }
     });
