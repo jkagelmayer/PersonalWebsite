@@ -167,26 +167,22 @@ a:hover, .hiddenlist:hover {
   width: 100%;
   text-align: center;
   table-layout: fixed;
-}
-
-.skill-level {
-  font-weight: bold;
-  align-items: center;
-  justify-items: center;
+  font-size: calc(12px + 0.25vw);
 }
 
 .skill-name {
-  column-span: 2;
+  text-align: right;
 }
 
-.skill-bar-proficient, .skill-bar-experienced, .skill-bar-familiar {
+.skill-bar {
   background-color: #3C5366;
-  border: 2px solid #EEE;
+  border-top: 5px solid #EEE;
+  border-bottom: 5px solid #EEE;
   border-left: 2px solid black;
   transition: opacity 0.33s;
 }
 
-.skill-bar-proficient:hover, .skill-bar-experienced:hover, .skill-bar-familiar:hover {
+.skill-bar:hover {
   opacity: 0.5;
 }
 
