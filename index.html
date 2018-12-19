@@ -9,7 +9,7 @@
     <script type="text/javascript" src="script/script.js"></script>
   </head>
   <body>
-    <img class="cover-photo" src="img/bunneePlanet.jpg"/>
+    <img class="cover-photo" id="welcome-photo" src="img/bunneePlanet.jpg"/>
     <div class="cover-text">
       <div class="valign">
         <h1 id="welcome-text">
@@ -334,28 +334,27 @@
       </div>
 
       <div class="wrapper" id="skills">
-        <h2>TODO: Technical Skills</h2>
-        <div class="skill-level" id="familiar">
-          <h3>Familiar</h3>
-        </div>
-        <div class="skill-level" id="experienced">
-          <h3>Experienced</h3>
-        </div>
-        <div class="skill-level" id="proficient">
-          <h3>Proficient</h3>
-        </div>
-        <div class="skill-name">
-          <h4>Proficient Skill</h4>
-        </div>
-        <div class="skill-bar-proficient"></div>
-        <div class="skill-name">
-          <h4>Experienced Skill</h4>
-        </div>
-        <div class="skill-bar-experienced"></div>
-        <div class="skill-name">
-          <h4>Familiar Skill</h4>
-        </div>
-        <div class="skill-bar-familiar"></div>
+        <h2>Technical Skills</h2>
+        <table id="skills-table">
+          <tr>
+            <th colspan="2"></th>
+            <th colspan="2">Familiar</th>
+            <th colspan="2">Experienced</th>
+            <th colspan="2">Proficient</th>
+          </tr>
+          <tr>
+            <td class="skill-name" colspan="2">Familiar Skill</td>
+            <td class="skill-bar-familiar" colspan="1"></td>
+          </tr>
+          <tr>
+            <td class="skill-name" colspan="2">Experienced Skill</td>
+            <td class="skill-bar-experienced" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="skill-name" colspan="2">Proficient Skill</td>
+            <td class="skill-bar-proficient" colspan="5"></td>
+          </tr>
+        </table>
       </div>
     </div>
     <img class="cover-photo" src="img/bunneePlanet.jpg"/>

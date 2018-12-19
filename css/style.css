@@ -1,62 +1,3 @@
-/*
-  RESET
-  http://meyerweb.com/eric/tools/css/reset/
-  v2.0 | 20110126
-  License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* END OF RESET */
-
 body {
   font-family: Avenir, Arial, sans-serif;
   background-color: #EEE;
@@ -90,10 +31,15 @@ p, ul {
 
 .cover-photo {
   position: absolute;
+  left: 0px;
   width: 100%;
   height: 56.25vw;
   opacity: 0.85;
   filter: alpha(opacity = 85);  /* for elderly browsers */
+}
+
+#welcome-photo {
+  top: 0px;
 }
 
 .cover-text {
@@ -217,6 +163,12 @@ a:hover, .hiddenlist:hover {
   vertical-align: middle;
 }
 
+#skills-table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
 .skill-level {
   font-weight: bold;
   align-items: center;
@@ -224,13 +176,11 @@ a:hover, .hiddenlist:hover {
 }
 
 .skill-name {
-  align-items: end;
-  justify-items: end;
-  margin-right: 1vw;
+  column-span: 2;
 }
 
 .skill-bar-proficient, .skill-bar-experienced, .skill-bar-familiar {
-  background-color: rgb(100,100,255);
+  background-color: #3C5366;
   border: 2px solid #EEE;
   border-left: 2px solid black;
   transition: opacity 0.33s;
@@ -238,15 +188,6 @@ a:hover, .hiddenlist:hover {
 
 .skill-bar-proficient:hover, .skill-bar-experienced:hover, .skill-bar-familiar:hover {
   opacity: 0.5;
-}
-
-.skill-bar-proficient {
-}
-
-.skill-bar-experienced {
-}
-
-.skill-bar-familiar{
 }
 
 .cover-text h1 {
