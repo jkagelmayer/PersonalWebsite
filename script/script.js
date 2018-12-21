@@ -3,6 +3,15 @@ $(document).ready(function() {
     $("ul", $(this).parent()).slideToggle();
   });
 
+  $(".hiddendeets").click(function () {
+    $(".hidden.details", $(this).closest(".box-wrapper")).slideToggle();
+    $(this).closest(".box-header").toggleClass("bottom-border");
+
+    if ($(this).parents("#skills").length) {
+      $(this).closest(".box-header").toggleClass("bottom-pad");
+    }
+  });
+
   $(".cover-text").find("h1").addClass("fade-in");
   $(".box-wrapper").addClass("fade-in");
   var fade_time_slow = 2000;

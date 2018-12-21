@@ -21,7 +21,7 @@
       <h1>About Me</h1>
       <div class="wrapper" id="education">
         <h2>Education</h2>
-        <div>
+        <div id="education-header">
           <h3 class="lalign">Purdue University, Class of 2020</h3>
           <h3 class="ralign">GPA: 3.91/4.00</h3>
         </div>
@@ -29,14 +29,14 @@
           <div class="box-header">
             <img class="icon" src="https://img.icons8.com/cotton/64/000000/rocket-take-off.png">
             <div class="info">
-              <h3>B.S. Aeronautical & Astronautical Engineering</h3>
+              <h3 class="hiddendeets">B.S. Aeronautical & Astronautical Engineering</h3>
               <ul>
                 <li>Major Concentration: Dynamics and Controls</li>
                 <li>Minor Concentration: Design</li>
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <p>Notable Coursework</p>
             <ul>
               <li>
@@ -81,13 +81,13 @@
           <div class="box-header">
             <img class="icon" src="https://img.icons8.com/cotton/64/000000/laptop-computer.png">
             <div class="info">
-              <h3>B.S. Computer Science</h3>
+              <h3 class="hiddendeets">B.S. Computer Science</h3>
               <ul>
                 <li>Track: Machine Intelligence</p>
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <p>Notable Coursework</p>
             <ul>
               <li>
@@ -156,10 +156,10 @@
           <div class="box-header">
             <img class="icon" src="https://img.icons8.com/cotton/64/000000/communication.png">
             <div class="info">
-              <h3>Minor in Philosophy</h3>
+              <h3 class="hiddendeets">Minor in Philosophy</h3>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <p>Notable Coursework</p>
             <ul>
               <li>Critical Thinking</li>
@@ -174,7 +174,7 @@
           <div class="box-header">
             <img class="icon" src="img/icon_dynetics_transparent.png">
             <div class="info">
-              <h3>Dynetics, Inc.</h3>
+              <h3 class="hiddendeets">Dynetics, Inc.</h3>
               <ul>
                 <li>Engineering Intern</li>
                 <li>Missile & Aviation Systems</li>
@@ -182,7 +182,7 @@
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <ul>
               <li>
                 Created, debugged, and refactored over 100,000 lines of trajectory simulation code using C++ and Microsoft Visual Studio.
@@ -200,7 +200,7 @@
           <div class="box-header">
             <img class="icon" src="img/icon_ge.png">
             <div class="info">
-              <h3>GE Aviation</h3>
+              <h3 class="hiddendeets">GE Aviation</h3>
               <ul>
                 <li>Engineering Intern</li>
                 <li>Lafayette Engine Facility</li>
@@ -208,7 +208,7 @@
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <ul>
               <li>
                 Provided daily support to Maintenance, Repair, and Overhaul operations on LEAP 1A and 1B turbofan engines.
@@ -229,7 +229,7 @@
           <div class="box-header">
             <img class="icon" src="img/lunatic_transparent.png">
             <div class="info">
-              <h3>Supplemental Instruction</h3>
+              <h3 class="hiddendeets">Supplemental Instruction</h3>
               <ul>
                 <li>SI Leader</li>
                 <li>
@@ -239,7 +239,7 @@
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <ul>
               <li>
                 Organize and facilitate collaborative learning sessions to improve students' understanding of basic dynamics and statics.
@@ -254,7 +254,7 @@
           <div class="box-header">
             <img class="icon" src="img/icon_sgt_transparent.png">
             <div class="info">
-              <h3>Sigma Gamma Tau</h3>
+              <h3 class="hiddendeets">Sigma Gamma Tau</h3>
               <ul>
                 <li>President</li>
                 <li>Alpha Chapter, Purdue University</li>
@@ -262,7 +262,7 @@
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <ul>
               <li>
                 Oversee all committees to ensure appropriate scheduling, preparation, and execution of events.
@@ -280,7 +280,7 @@
           <div class="box-header">
             <img class="icon" src="img/icon_sspi.png">
             <div class="info">
-              <h3>Orbital Specialist</h3>
+              <h3 class="hiddendeets">Orbital Specialist</h3>
               <ul>
                 <li>SEDS/SSPI Satellite Competition</li>
                 <li>Purdue University</li>
@@ -288,7 +288,7 @@
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <ul>
               <li>
                 Worked with team of six Purdue students to create design document for communications system to support hypothetical lunar base.
@@ -306,7 +306,7 @@
           <div class="box-header">
             <img class="icon" src="img/icon_hab_transparent.png">
             <div class="info">
-              <h3>Photography Team Lead</h3>
+              <h3 class="hiddendeets">Photography Team Lead</h3>
               <ul>
                 <li>SEDS/AIAA High-Altitude Balloon Team</li>
                 <li>Purdue University</li>
@@ -314,7 +314,7 @@
               </ul>
             </div>
           </div>
-          <div class="details">
+          <div class="hidden details">
             <ul>
               <li>
                 Led team of four students in designing original high-altitude balloon photography system.
@@ -335,97 +335,80 @@
 
       <div class="wrapper" id="skills">
         <h2>Technical Skills</h2>
-        <table id="skills-table">
-          <tr>
-            <th colspan="2"></th>
-            <th colspan="2">Familiar</th>
-            <th colspan="2">Experienced</th>
-            <th colspan="2">Proficient</th>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">
-              MS Office Suite
-            </td>
-            <td class="skill-bar" colspan="5"></td>
-          </tr>
-            <td class="skill-name" colspan="2">
-              MATLAB
-            </td>
-            <td class="skill-bar" colspan="5"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">MS Visual Studio</td>
-            <td class="skill-bar" colspan="3"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">AutoCAD & Inventor</td>
-            <td class="skill-bar" colspan="3"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">CATIA V5</td>
-            <td class="skill-bar" colspan="3"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">C & C++</td>
-            <td class="skill-bar" colspan="3"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">Java</td>
-            <td class="skill-bar" colspan="3"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">HTML5/CSS3</td>
-            <td class="skill-bar" colspan="3"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">GMAT</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">STK</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">ARM Assembly</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">JavaScript</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">Mercurial</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">Node.JS</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">JQuery</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">Python</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">UNIX</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">SQL</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">Git</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>
-          <tr>
-            <td class="skill-name" colspan="2">R</td>
-            <td class="skill-bar" colspan="1"></td>
-          </tr>  
-        </table>
+        <div class="box-wrapper" id="skills-engineering">
+          <div class="box-header">
+            <h3 class="hiddendeets">Engineering Tools</h3>
+          </div>
+          <div class="hidden details">
+            <div class="column">
+              <h4>Experienced</h4>
+              <ul>
+                <li>Microsoft Office Suite (sans Access)</li>
+                <li>MATLAB</li>
+                <li>AutoCAD & Inventor</li>
+                <li>CATIA V5</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Familiar</h4>
+              <ul>
+                <li>General Mission Analysis Toolkit (GMAT)</li>
+                <li>System Tool Kit (STK)</li>
+                <li>Geometric Dimensioning and Tolerancing (GD&T)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box-wrapper" id="skills-programming">
+          <div class="box-header">
+            <h3 class="hiddendeets">Programming Languages</h3>
+          </div>
+          <div class="hidden details">
+            <div class="column">
+              <h4>Experienced</h4>
+              <ul>
+                <li>HTML5/CSS3</li>
+                <li>C & C++</li>
+                <li>Java</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Familiar</h4>
+              <ul>
+                <li>ARM Assembly</li>
+                <li>WPF/XAML</li>
+                <li>JavaScript</li>
+                <li>Node.JS</li>
+                <li>JQuery</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>R</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box-wrapper" id="skills-software">
+          <div class="box-header">
+            <h3 class="hiddendeets">Other Software</h3>
+          </div>
+          <div class="hidden details">
+            <div class="column">
+              <h4>Experienced</h4>
+              <ul>
+                <li>Microsoft Visual Studio</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h4>Familiar</h4>
+              <ul>
+                <li>Microsoft Access</li>
+                <li>Mercurial</li>
+                <li>UNIX</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <img class="cover-photo" src="img/bunneePlanet.jpg"/>
