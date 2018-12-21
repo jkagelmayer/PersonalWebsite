@@ -185,6 +185,13 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   margin-right: 5%;
 }
 
+.contact-column {
+  float: left;
+  width: 16%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .cover-text h1 {
   color: #EEE;
   background-color: transparent;

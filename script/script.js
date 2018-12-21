@@ -7,7 +7,7 @@ $(document).ready(function() {
     $(".hidden.details", $(this).closest(".box-wrapper")).slideToggle();
     $(this).closest(".box-header").toggleClass("bottom-border");
 
-    if ($(this).parents("#skills").length) {
+    if ($(this).parents("#education").length == 0) {
       $(this).closest(".box-header").toggleClass("bottom-pad");
     }
   });
