@@ -9,6 +9,24 @@
     <script type="text/javascript" src="script/script.js"></script>
   </head>
   <body>
+    <div id="navbar">
+      <a href="#home">Home</a>
+      <div class="dropdown">
+        <a class="dd-parent" href="#aboutme">
+          About Me
+        </a>
+        <div id="dd-children">
+          <a href="#education">Education</a>
+          <a href="#industry">Industry</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+        </div>
+      </div>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </div>
+
     <img class="cover-photo" id="welcome-photo" src="img/bunneePlanet.jpg"/>
     <div class="cover-text">
       <div class="valign">
@@ -449,8 +467,6 @@
         <h1>Some other picture will go here.</h1>
       </div>
     </div>
-
-
     <div class="wrapper" id="contact">
       <h1>Contact</h1>
       <div class="wrapper">
@@ -479,7 +495,7 @@
     <footer>
       <div class="column">
         <ul>
-          <li>Github Repo</li>
+          <li style="margin-bottom: 10px;">Github Repo</li>
           <li>"FAQ"</li>
         </ul>
       </div>
