@@ -82,6 +82,52 @@ p, ul {
   font-size: calc(12px + 0.25vw);
 }
 
+#navbar {
+  background-color: #3C5366;
+  position: fixed;
+  top: 0;
+  height: 43px;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar a {
+  float: left;
+  font-size: 18px;
+  color: #EEE;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #24323E;
+}
+
+.dropdown {
+  float: left;
+}
+
+#dd-children {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px;
+  font-size: 16px;
+  text-indent: 10px;
+  top: 43px;
+  z-index: 1;
+  background-color: #3C5366;
+}
+
+#dd-children a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 1;
+}
+
 .cover-photo {
   position: absolute;
   left: 0px;
@@ -92,7 +138,11 @@ p, ul {
 }
 
 #welcome-photo {
-  top: 0px;
+  top: 43px;
+}
+
+#welcome-text {
+  margin-top: 43px;
 }
 
 .cover-text {
@@ -172,6 +222,10 @@ p, ul {
 
 .details li {
   margin-top: 10px;
+}
+
+#aboutme {
+  margin-top: 93px;
 }
 
 #education .details p {
