@@ -90,6 +90,7 @@ p, ul {
   height: 43px;
   width: 100%;
   z-index: 1;
+  opacity: 0.95;
 }
 
 #navbar a {
@@ -112,7 +113,6 @@ p, ul {
   display: none;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px;
   font-size: 16px;
   text-indent: 10px;
   top: 43px;
@@ -138,13 +138,13 @@ p, ul {
   filter: alpha(opacity = 85);  /* for elderly browsers */
 }
 
-#welcome-photo {
+/*#welcome-photo {
   top: 43px;
 }
 
 #welcome-text {
   margin-top: 43px;
-}
+}*/
 
 .cover-text {
   position: relative;
@@ -318,10 +318,14 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   text-shadow: black 0px 0px 5px;
 }
 
+.cover-text h1 a {
+  color: #FF857C;
+}
+
 footer {
-  height: 100px;
+  height: 130px;
   padding: 20px;
-  background-color: #293946;
+  background-color: #3C5366;
   color: #EEE;
   font-size: 10px;
   position: relative;
