@@ -1,0 +1,336 @@
+/* ------ RESET ------- */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------ END RESET ------- */
+
+body {
+  font-family: Avenir, Arial, sans-serif;
+  background-color: #EEE;
+  color: #333;
+  text-align: left;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: calc(12px + 4vw);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: calc(12px + 2vw);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: calc(12px + 0.5vw);
+  margin: 0;
+}
+
+h4 {
+	font-size: calc(12px + 0.35vw);
+  margin-top: 0;
+}
+
+p, ul {
+  font-size: calc(12px + 0.25vw);
+}
+
+#navbar {
+  background-color: #3C5366;
+  position: fixed;
+  top: 0;
+  height: 43px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+#navbar a {
+  float: left;
+  font-size: 18px;
+  color: #EEE;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #24323E;
+}
+
+.dropdown {
+  float: left;
+}
+
+#dd-children {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  font-size: 16px;
+  text-indent: 10px;
+  top: 43px;
+  z-index: 1;
+  background-color: #3C5366;
+}
+
+#dd-children a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 1;
+}
+
+.cover-photo {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 56.25vw;
+  opacity: 0.85;
+  filter: alpha(opacity = 85);  /* for elderly browsers */
+}
+
+/*#welcome-photo {
+  top: 43px;
+}
+
+#welcome-text {
+  margin-top: 43px;
+}*/
+
+.cover-text {
+  position: relative;
+  display: table;
+  width: 80%;
+  margin: 0 auto;
+  height: 56.25vw;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.wrapper .wrapper {
+  width: 100%;
+  margin: 5% auto;
+	overflow: hidden;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.box-wrapper {
+  width: 99%;
+	margin: 2% auto 4% auto;
+	border: 1px solid #999;
+  box-shadow: 0px 3px 5px #999;
+}
+
+.box-wrapper > div {
+	width: 95%;
+	margin: 2% auto;
+	overflow: hidden;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #555;
+}
+
+.bottom-pad {
+  padding-bottom: 2%;
+}
+
+.icon {
+	width: 10%;
+	padding: 0% 2.5% 2.5% 2.5%;
+	float: left;
+}
+
+#leadership .icon {
+  /* this icon already has some padding */
+  width: 13%;
+  padding: 1%;
+}
+
+.info {
+	width: 80%;
+	padding: 0% 2.5% 2.5% 2.5%;
+	float: left;
+}
+
+.info h3 {
+	font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details {
+	margin-top: 2%;
+}
+
+.details p {
+	text-decoration: underline;
+}
+
+.details li {
+  margin-top: 10px;
+}
+
+#aboutme {
+  margin-top: 93px;
+}
+
+#education .details p {
+  margin-left: 15px;
+}
+
+#education .details ul {
+  margin-left: 30px;
+}
+
+ul {
+	margin: 0 0 0 15px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+li ul {
+	margin-left: 30px;
+  list-style-type: disc;
+}
+
+a, .hiddenlist, .hiddendeets {
+	color: #A85751;
+	transition: opacity 0.33s;
+	cursor: pointer;
+}
+
+a:hover, .hiddenlist:hover, .hiddendeets:hover {
+	opacity: 0.5;
+}
+
+.hidden {
+	display: none;
+}
+
+#education-header {
+  overflow: hidden;
+}
+
+#education-header h3 {
+  margin: 0;
+}
+
+.lalign {
+  float: left;
+}
+
+.ralign {
+  float: right;
+}
+
+.valign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#contact {
+  min-width: 550px;
+  max-width: 800px;
+}
+
+.contact-column {
+  float: left;
+  width: 18%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+}
+
+.contact-column img, .contact-column p {
+  float: top;
+}
+
+.contact-column img {
+  width: 60px;
+  height: 60px;
+}
+
+.cover-text h1 {
+  color: #EEE;
+  background-color: transparent;
+  text-shadow: black 0px 0px 5px;
+}
+
+.cover-text h1 a {
+  color: #FF857C;
+}
+
+footer {
+  height: 130px;
+  padding: 20px;
+  background-color: #3C5366;
+  color: #EEE;
+  font-size: 10px;
+  position: relative;
+}
+
+footer a {
+  color: #FF857C;
+}
