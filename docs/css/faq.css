@@ -23,3 +23,8 @@ li p {
   margin-top: 5px;
   margin-bottom: calc(10px + 1vw);
 }
+
+#navbar a:last-child {
+  float: left;
+  padding: 8px 16px;
+}
