@@ -101,6 +101,12 @@ p, ul {
   text-decoration: none;
 }
 
+#navbar a:last-child {
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 #navbar a:hover {
   background-color: #24323E;
 }
