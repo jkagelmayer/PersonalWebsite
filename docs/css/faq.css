@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 100px auto;
+}
+
+p {
+  font-size: calc(12px + 0.5vw);
+  margin: 0;
+}
+
+ol {
+  font-size: calc(12px + 0.5vw);
+  margin: 50px auto;
+  list-style: decimal;
+}
+
+li {
+  font-weight: bold;
+}
+
+li p {
+  font-weight: normal;
+  margin-left: calc(12px + 0.5vw);
+  margin-top: 5px;
+  margin-bottom: calc(10px + 1vw);
+}
