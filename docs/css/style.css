@@ -101,7 +101,7 @@ p, ul {
   text-decoration: none;
 }
 
-#navbar a:last-child {
+#navbar > a:last-child {
   float: right;
   padding-right: 20px;
   padding-left: 20px;
@@ -329,7 +329,7 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
 }
 
 footer {
-  height: 130px;
+  height: 150px;
   padding: 20px;
   background-color: #3C5366;
   color: #EEE;
