@@ -84,6 +84,40 @@ p, ul {
   font-size: calc(13px + 0.25vw);
 }
 
+ul {
+	margin: 0 0 0 15px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+li ul {
+	margin-left: 30px;
+  list-style-type: disc;
+}
+
+a, .hiddenlist, .hiddendeets {
+	color: #A85751;
+	transition: opacity 0.33s;
+	cursor: pointer;
+}
+
+a:hover, .hiddenlist:hover, .hiddendeets:hover {
+	opacity: 0.5;
+}
+
+.lalign {
+  float: left;
+}
+
+.ralign {
+  float: right;
+}
+
+.valign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 #navbar {
   background-color: #3C5366;
   position: fixed;
@@ -91,7 +125,7 @@ p, ul {
   height: 43px;
   width: 100%;
   z-index: 1;
-  opacity: 0.95;
+  opacity: 0.8;
 }
 
 #navbar a {
@@ -145,20 +179,22 @@ p, ul {
   filter: alpha(opacity = 85);  /* for elderly browsers */
 }
 
-/*#welcome-photo {
-  top: 43px;
-}
-
-#welcome-text {
-  margin-top: 43px;
-}*/
-
 .cover-text {
   position: relative;
   display: table;
   width: 80%;
   margin: 0 auto;
   height: 56.25vw;
+}
+
+.cover-text h1 {
+  color: #EEE;
+  background-color: transparent;
+  text-shadow: black 0px 0px 5px;
+}
+
+.cover-text h1 a {
+  color: #FF857C;
 }
 
 .wrapper {
@@ -245,27 +281,6 @@ p, ul {
   margin-left: 30px;
 }
 
-ul {
-	margin: 0 0 0 15px;
-  padding-left: 0px;
-  list-style-type: none;
-}
-
-li ul {
-	margin-left: 30px;
-  list-style-type: disc;
-}
-
-a, .hiddenlist, .hiddendeets {
-	color: #A85751;
-	transition: opacity 0.33s;
-	cursor: pointer;
-}
-
-a:hover, .hiddenlist:hover, .hiddendeets:hover {
-	opacity: 0.5;
-}
-
 .hidden {
 	display: none;
 }
@@ -276,19 +291,6 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
 
 #education-header h3 {
   margin: 0;
-}
-
-.lalign {
-  float: left;
-}
-
-.ralign {
-  float: right;
-}
-
-.valign {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .column {
@@ -308,16 +310,6 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   font-size: calc(13px + 0.5vw);
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.cover-text h1 {
-  color: #EEE;
-  background-color: transparent;
-  text-shadow: black 0px 0px 5px;
-}
-
-.cover-text h1 a {
-  color: #FF857C;
 }
 
 footer {
