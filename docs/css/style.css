@@ -51,11 +51,25 @@ table {
 /* ------ END RESET ------- */
 
 body {
-  font-family: Avenir, Arial, sans-serif;
+  font-family: Oxygen, Avenir, Arial, sans-serif;
   background-color: #EEE;
   color: #333;
   text-align: left;
   line-height: 1.5;
+}
+
+.full-window {
+  width: 100vw;
+  height: 100vh;
+}
+
+.valign-parent {
+  display: table;
+}
+
+.valign-child {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 h1 {
