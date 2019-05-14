@@ -255,8 +255,9 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
 
 .icon {
 	width: 10%;
-	padding: 0% 2.5% 2.5% 2.5%;
 	float: left;
+  text-align: center;
+  padding-top: 1%;
 }
 
 #leadership .icon {
