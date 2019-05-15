@@ -60,20 +60,7 @@ body {
   line-height: 1.5;
 }
 
-.full-window {
-  width: calc(100vw - 30px);
-  height: calc(100vh - 30px - 18px - 24px);
-}
-
-.valign-parent {
-  display: table;
-}
-
-.valign-child {
-  display: table-cell;
-  vertical-align: middle;
-}
-
+/*--- Text ---*/
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -101,6 +88,8 @@ p, ul {
   font-size: 1rem;
 }
 
+
+/*--- Lists ---*/
 ul {
 	margin: 0 0 0 15px;
   padding-left: 0px;
@@ -112,6 +101,8 @@ li ul {
   list-style-type: disc;
 }
 
+
+/*--- Clickables ---*/
 a, .hiddenlist, .hiddendeets {
 	color: #A85751;
 	transition: opacity 0.33s;
@@ -120,8 +111,11 @@ a, .hiddenlist, .hiddendeets {
 
 a:hover, .hiddenlist:hover, .hiddendeets:hover {
 	opacity: 0.5;
+  filter: alpha(opacity=50);  /* why on earth are you still using this ancient browser jesus christ */
 }
 
+
+/*--- Alignment and sizing ---*/
 .lalign {
   float: left;
 }
@@ -130,11 +124,22 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   float: right;
 }
 
-.valign {
+.valign-parent {
+  display: table;
+}
+
+.valign-child {
   display: table-cell;
   vertical-align: middle;
 }
 
+.full-window {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px - 18px - 24px);
+}
+
+
+/*--- Navbar ---*/
 #navbar {
   background-color: #EEE;
   position: fixed;
@@ -157,10 +162,6 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   padding-right: 20px;
   padding-left: 20px;
 }
-
-/*#navbar a:hover {
-  background-color: #24323E;
-}*/
 
 .dropdown {
   float: left;
@@ -186,14 +187,16 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   z-index: 1;
 }
 
-.cover-photo {
+
+/*--- Cover photo and text ---*/
+/*.cover-photo {
   position: absolute;
   left: 0px;
   width: 100%;
   height: 56.25vw;
   opacity: 0.5;
-  filter: alpha(opacity = 5);  /* for elderly browsers */
-}
+  filter: alpha(opacity = 5);*/  /* for elderly browsers */
+/*}
 
 .cover-text {
   position: relative;
@@ -207,16 +210,12 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   text-align: center;
 }
 
-/*.cover-text h1, p {
-  color: #EEE;
-  background-color: transparent;
-  text-shadow: black 0px 0px 5px;
-}*/
-
 .cover-text h1 a {
   color: #FF857C;
-}
+}*/
 
+
+/*--- Wrappers ---*/
 .wrapper {
   width: 80%;
   max-width: 800px;
@@ -227,10 +226,6 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   width: 100%;
   margin: 5% auto;
 	overflow: hidden;
-}
-
-.fade-in {
-  opacity: 0;
 }
 
 .box-wrapper {
@@ -254,103 +249,18 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   padding-bottom: 2%;
 }
 
-.icon {
-	width: 10%;
-	float: left;
-  text-align: center;
-  padding-top: 1%;
-}
 
-#leadership .icon {
-  /* this icon already has some padding */
-  width: 13%;
-  padding: 1%;
-}
-
-.info {
-	width: 80%;
-	padding: 0% 2.5% 2.5% 2.5%;
-	float: left;
-}
-
-.info h3 {
-	font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.details {
-	margin-top: 2%;
-}
-
-.details p {
-	text-decoration: underline;
-}
-
-.details li {
-  margin-top: 10px;
-}
-
-#resume {
-  margin-top: 93px;
-}
-
-#summary {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#education .details p {
-  margin-left: 15px;
-}
-
-#education .details ul {
-  margin-left: 30px;
+/*--- Fading/hiding ---*/
+.fade-in {
+  opacity: 0;
 }
 
 .hidden {
 	display: none;
 }
 
-#education-header {
-  overflow: hidden;
-}
 
-#education-header h3 {
-  margin: 0;
-}
-
-.column {
-  float: left;
-  width: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#contact h2 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#contact p {
-  text-align: center;
-  font-size: calc(13px + 0.5vw);
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
+/*--- Footer ---*/
 footer {
   text-align: center;
 }
-
-/*footer {
-  height: 150px;
-  padding: 20px;
-  background-color: #3C5366;
-  color: #EEE;
-  font-size: 12px;
-  position: relative;
-}
-
-footer a {
-  color: #FF857C;
-}*/

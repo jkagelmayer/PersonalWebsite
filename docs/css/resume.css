@@ -1,3 +1,4 @@
+/*--- Text ---*/
 h1 {
   font-size: 3rem;
   text-align: center;
@@ -21,7 +22,102 @@ h4 {
   margin-bottom: 30px;
 }
 
+
+/*--- Icons ---*/
 .fas {
   margin: 0 auto;
   font-size: 3.5rem;
+}
+
+.icon {
+	width: 10%;
+	float: left;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#leadership .icon {
+  /* this icon already has some padding */
+  width: 13%;
+  padding: 1%;
+}
+
+
+/*--- Info ---*/
+.info {
+	width: 80%;
+	padding: 0% 2.5% 2.5% 2.5%;
+	float: left;
+}
+
+.info h3 {
+	font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+/*--- Details ---*/
+.details {
+	margin-top: 2%;
+}
+
+.details p {
+	text-decoration: underline;
+}
+
+.details li {
+  margin-top: 10px;
+}
+
+
+/*--- Whole resume and summary ---*/
+#resume {
+  margin-top: 93px;
+}
+
+#summary {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/*--- Education ---*/
+#education .details p {
+  margin-left: 15px;
+}
+
+#education .details ul {
+  margin-left: 30px;
+}
+
+#education-header {
+  overflow: hidden;
+}
+
+#education-header h3 {
+  margin: 0;
+}
+
+
+/*--- Skills ---*/
+.skills-column {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/*--- Contact ---*/
+#contact h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#contact p {
+  text-align: center;
+  font-size: calc(13px + 0.5vw);
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
