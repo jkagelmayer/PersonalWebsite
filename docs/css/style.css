@@ -111,7 +111,7 @@ a, .hiddenlist, .hiddendeets {
 
 a:hover, .hiddenlist:hover, .hiddendeets:hover {
 	opacity: 0.5;
-  filter: alpha(opacity=50);  /* why on earth are you still using this ancient browser jesus christ */
+  filter: alpha(opacity=50);  /* for elderly browsers */
 }
 
 
@@ -139,8 +139,8 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
 }
 
 
-/*--- Navbar ---*/
-#navbar {
+/*--- Header and Nav Menu ---*/
+header {
   background-color: #EEE;
   position: fixed;
   top: 0;
@@ -149,70 +149,40 @@ a:hover, .hiddenlist:hover, .hiddendeets:hover {
   z-index: 1;
 }
 
-#navbar a {
-  float: right;
+header a {
   font-size: 18px;
-  /*color: #333;*/
-  padding: 8px 16px;
   text-decoration: none;
 }
 
-#navbar > a:first-child {
-  float: left;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.dropdown {
+#home-link {
   float: left;
 }
 
-#dd-children {
+nav {
+  float: right;
+}
+
+#nav-icon {
   display: none;
-  position: absolute;
-  min-width: 160px;
-  font-size: 16px;
-  text-indent: 10px;
-  top: 43px;
-  z-index: 1;
-  background-color: #3C5366;
+  font-size: 24px;
+  color: #A85751;
+  padding: 8px 20px;
 }
 
-#dd-children a {
-  float: none;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  z-index: 1;
-}
-
-
-/*--- Cover photo and text ---*/
-/*.cover-photo {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 56.25vw;
+#nav-icon:hover {
   opacity: 0.5;
-  filter: alpha(opacity = 5);*/  /* for elderly browsers */
-/*}
-
-.cover-text {
-  position: relative;
-  display: table;
-  width: 80%;
-  margin: 0 auto;
-  height: 56.25vw;
-  color: #EEE;
-  background-color: transparent;
-  text-shadow: black 0px 0px 5px;
-  text-align: center;
+  filter: alpha(opacity=50);  /* for elderly browsers */
 }
 
-.cover-text h1 a {
-  color: #FF857C;
-}*/
+header ul {
+  list-style: none;
+  margin: 0;
+}
+
+header li {
+  display: inline-block;
+  padding: 8px 15px;
+}
 
 
 /*--- Wrappers ---*/
@@ -302,6 +272,24 @@ footer {
 
   h4 {
     font-size: 1.4rem;
+  }
+
+  #nav-icon {
+    display: inline-block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    background: #EEE;
+    width: 160px;
+    right: 20px;
+    top: 43px;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
   }
 }
 
