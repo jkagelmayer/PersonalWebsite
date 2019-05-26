@@ -1,0 +1,25 @@
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.wrapper p {
+  text-align: justify;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background-color: #AAA;
+}
