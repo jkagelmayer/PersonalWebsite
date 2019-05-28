@@ -23,3 +23,38 @@ hr {
   border: none;
   background-color: #AAA;
 }
+
+
+/*--- Media Queries ---*/
+@media (max-width: 992px) {
+  /* medium screens */
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* smol screens */
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* v smol screens */
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}

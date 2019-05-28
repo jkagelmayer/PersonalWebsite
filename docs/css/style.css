@@ -274,6 +274,10 @@ footer {
     font-size: 1.4rem;
   }
 
+  .wrapper {
+    width: 90%;
+  }
+
   #nav-icon {
     display: inline-block;
   }

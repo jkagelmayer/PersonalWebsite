@@ -37,3 +37,12 @@ a {
   color: #333;
   font-style: italic;
 }
+
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+  /* smol screens */
+  .wrapper-thin {
+    width: 90%;
+  }
+}
