@@ -5,7 +5,9 @@ $(document).ready(function() {
     $('nav ul').slideToggle(300);
   });
   $('nav ul').click(function () {
-    $('nav ul').slideToggle(300);
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      $('nav ul').slideToggle(300);
+    }
   });
 
   /* Scroll to current-page links */
