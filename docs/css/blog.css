@@ -41,6 +41,10 @@ a {
   font-style: italic;
 }
 
+.dark .post-listing p {
+  color: #EEE;
+}
+
 
 /* --- Media Queries --- */
 @media (max-width: 768px) {
