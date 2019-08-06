@@ -51,6 +51,13 @@ img {
   margin-bottom: 15px;
 }
 
+.podcast-icon {
+  float: left;
+  margin: 5px 10px 5px 0px;
+  height: 20em;
+  width: 20em;
+}
+
 
 /*--- Media Queries ---*/
 @media (max-width: 992px) {
@@ -61,6 +68,11 @@ img {
 
   h4 {
     font-size: 1.3rem;
+  }
+
+  .podcast-icon {
+    height: 15em;
+    width: 15em;
   }
 }
 
@@ -83,5 +95,12 @@ img {
 
   h4 {
     font-size: 1rem;
+  }
+
+  .podcast-icon {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
