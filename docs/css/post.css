@@ -44,6 +44,15 @@ img {
   width: 100%;
 }
 
+ol, ul {
+  list-style: initial;
+  padding-left: 1em;
+}
+
+b {
+  font-weight: bold;  /* why is this necessary?... */
+}
+
 .caption {
   font-style: italic;
   font-size: 0.9rem;
