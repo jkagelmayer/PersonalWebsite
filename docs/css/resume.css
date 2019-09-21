@@ -43,6 +43,11 @@ h4 {
   padding: 1%;
 }
 
+#project-tweet .icon i {
+  color: #38A1F3;
+  font-size: 3rem;
+}
+
 
 /*--- Info ---*/
 .info {
